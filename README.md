@@ -50,18 +50,7 @@ pip install -r requirements.txt
 #### Step 2: Prepare testing data and run testing command 
 You can modify input_path and output_path to run testing command. The input_path is the path of the test image and the output_path is the path where the output images are saved.
 ```
-python GDPO/inferences/inference.py \
---input_image input_path \
---output_dir output_path \
---pretrained_path ckp/model_TVT.pkl \
---pretrained_model_name_or_path stabilityai/stable-diffusion-2-1-base \
---pretrained_unet_path ckp/TVTUNet \
---vae4d_path ckp/vae.ckpt \
---ram_ft_path ckp/DAPE.pth \
---negprompt 'dotted, noise, blur, lowres, smooth' \
---prompt 'clean, high-resolution, 8k' \
---upscale 4 \
---time_step 1
+python GDPO/inferences/inference.py 
 ```
 or 
 ```
@@ -69,20 +58,7 @@ bash scripts/test/test_realsr.sh
 ```
 We also provide the tile code to save the GPU memory for inference. You can run the running command and change the tile size and stride according to the VRAM of your device.
 ```
-python TVT/inferences/inference_tile.py \
---input_image input_path \
---output_dir output_path \
---pretrained_path ckp/model_TVT.pkl \
---pretrained_model_name_or_path stabilityai/stable-diffusion-2-1-base \
---pretrained_unet_path ckp/TVTUNet \
---vae4d_path ckp/vae.ckpt \
---ram_ft_path ckp/DAPE.pth \
---negprompt 'dotted, noise, blur, lowres, smooth' \
---prompt 'clean, high-resolution, 8k' \
---upscale 4 \
---time_step 1 \
---tiled_size 96 \
---tiled_overlap 32
+python TVT/inferences/inference_tile.py 
 ```
 
 ## 🔗 Citations
