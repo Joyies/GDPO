@@ -11,15 +11,14 @@
 <sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>OPPO Research Institute
 </div>
 
-[![](https://img.shields.io/badge/ArXiv%20-Paper-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2507.20291)&nbsp; [![weights](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-model%20weights-blue)](https://huggingface.co/Joypop/TVTSR/tree/main)
+[![](https://img.shields.io/badge/ArXiv%20-Paper-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2507.20291)&nbsp; [![weights](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-model%20weights-blue)](https://huggingface.co/Joypop/GDPO/tree/main)
 
 
 ## ⏰ Update
-- **2025.7.29**: Paper is released on [ArXiv](https://arxiv.org/pdf/2507.20291).
-- **2025.7.28**: The training code and testing code are released.
-- **2025.7.24**: The repo is released.
+- **2026.*.***: Paper is released on [ArXiv](https://arxiv.org/pdf/2507.20291).
+- **2026.*.**: The training code and testing code are released.
+- **2026.3.10**: The repo is released.
 
-:star: If TVT is helpful to your images or projects, please help star this repo. Thanks! :hugs:
 
 ### TODO 
 - [x] Release the code for inference.
