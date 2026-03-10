@@ -58,7 +58,7 @@ bash scripts/test/test_realsr.sh
 ```
 We also provide the tile code to save the GPU memory for inference. You can run the running command and change the tile size and stride according to the VRAM of your device.
 ```
-python TVT/inferences/inference_tile.py 
+python GDPO/inferences/inference_tile.py 
 ```
 
 ## 🔗 Citations
