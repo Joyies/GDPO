@@ -20,12 +20,6 @@
 - **2026.3.10**: The repo is released.
 
 
-### TODO 
-- [x] Release the code for inference.
-- [x] Update the code for training.
-- [ ] fp16 VAED4.
-
-
 ## ⚙ Dependencies and Installation
 ```shell
 ## git clone this repository
@@ -40,26 +34,6 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## 🏂 Quick Inference
-
-### Real-world Image Super-resolution
-
-#### Step 1: Download the pretrained models
-- Download the model weights [![weights](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-model%20weights-blue)](https://huggingface.co/Joypop/GDPO/tree/main)&nbsp; and put the model weights in the `ckp/`:
-
-#### Step 2: Prepare testing data and run testing command 
-You can modify input_path and output_path to run testing command. The input_path is the path of the test image and the output_path is the path where the output images are saved.
-```
-python GDPO/inferences/inference.py 
-```
-or 
-```
-bash scripts/test/test_realsr.sh
-```
-We also provide the tile code to save the GPU memory for inference. You can run the running command and change the tile size and stride according to the VRAM of your device.
-```
-python GDPO/inferences/inference_tile.py 
-```
 
 ## 🔗 Citations
 
