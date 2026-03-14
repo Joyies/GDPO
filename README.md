@@ -72,7 +72,7 @@ The hyperparameters in train_NAOSD.sh can be modified to suit different experime
 ```
 bash scripts/train/train_GDPOSR.sh
 ```
-The hyperparameters in train_GDPOSR.sh can be modified to suit different experimental settings. Besides, after training with GDPO-SR, you can use GDPOSR/mergelora.py to merge the LoRA into the UNet for subsequent inference.
+The hyperparameters in train_GDPOSR.sh can be modified to suit different experimental settings. Besides, after training with GDPO-SR, you can use ```GDPOSR/mergelora.py``` to merge the LoRA into the UNet for subsequent inference.
 ## 🔗 Citations
 ```
 @article{yi2026gdpo,
