@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 #### Step 2: Prepare testing data and run testing command 
 You can modify input_path and output_path to run testing command. The input_path is the path of the test image and the output_path is the path where the output images are saved.
-```
+```shell
 CUDA_VISIBLE_DEVICES=0, python GDPOSR/inferences/test.py \
 --input_path test_LR \
 --output_path experiment/GDPOSR \
@@ -53,7 +53,7 @@ CUDA_VISIBLE_DEVICES=0, python GDPOSR/inferences/test.py \
 --time_step_noise=250 
 ```
 or 
-```
+```shell
 bash scripts/test/test.sh
 ```
 
@@ -64,12 +64,12 @@ Download the [OpenImage dataset](https://storage.googleapis.com/openimages/web/i
 
 
 ### Step2: Train NAOSD.
-```
+```shell
 bash scripts/train/train_NAOSD.sh
 ```
-The hyperparameters in train_NAOSD.sh can be modified to suit different experimental settings. Besides, after training with NAOSD, you can use GDPOSR/mergelora.py to merge the LoRA into the UNet and VAE as base model for subsequent reinforcement learning training and inference.
+The hyperparameters in train_NAOSD.sh can be modified to suit different experimental settings. Besides, after training with NAOSD, you can use ```GDPOSR/mergelora.py``` to merge the LoRA into the UNet and VAE as base model for subsequent reinforcement learning training and inference.
 ### Step3: Train GDPO-SR
-```
+```shell
 bash scripts/train/train_GDPOSR.sh
 ```
 The hyperparameters in train_GDPOSR.sh can be modified to suit different experimental settings. Besides, after training with GDPO-SR, you can use ```GDPOSR/mergelora.py``` to merge the LoRA into the UNet for subsequent inference.
