@@ -60,7 +60,7 @@ bash scripts/test/test.sh
 ## 🚄 Training Phase
 
 ### Step1: Prepare training data
-Download the [OpenImage dataset](https://storage.googleapis.com/openimages/web/index.html) and [LSIDR dataset](https://github.com/ofsoundof/LSDIR). For each image in the LSDIR dataset, crop multiple 512×512 image patches using a sliding window with a stride of 64 pixels;
+Download the [LSIDR dataset](https://github.com/ofsoundof/LSDIR) and [FFHQ dataset](https://github.com/NVlabs/ffhq-dataset) and crop multiple 512×512 image patches using a sliding window with a stride of 64 pixels;
 
 
 ### Step2: Train NAOSD.
