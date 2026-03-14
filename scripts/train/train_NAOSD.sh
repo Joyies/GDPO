@@ -1,0 +1,34 @@
+
+accelerate launch --main_process_port=12345 --gpu_ids=0,1,2,3, --num_processes=4 GDPOSR/train/train_NAOSD.py \
+    --pretrained_model_name_or_path="stable-diffusion-2-1-base" \
+    --dataset_folder="lsdir_ffhq10k" \
+    --testdataset_folder="RealSRCrop128" \
+    --resolution=512 \
+    --learning_rate=5e-5 \
+    --train_batch_size=2 \
+    --gradient_accumulation_steps=2 \
+    --enable_xformers_memory_efficient_attention \
+    --eval_freq 500 \
+    --checkpointing_steps 500 \
+    --mixed_precision='fp16' \
+    --report_to "tensorboard" \
+    --output_dir="experiment/NAOSD" \
+    --null_text_ratio=1 \
+    --lora_rank_unet_vsd=4 \
+    --lora_rank_unet=4 \
+    --lora_rank_vae=4 \
+    --lambda_lpips=2 \
+    --lambda_l2=1 \
+    --lambda_vsd=1 \
+    --lambda_vsd_lora=1 \
+    --min_dm_step_ratio=0.02 \
+    --max_dm_step_ratio=0.50 \
+    --use_vae_encode_lora \
+    --align_method="adain" \
+    --use_online_deg \
+    --deg_file_path="params_GDPO.yml" \
+    --time_step=100 \
+    --time_step_noise=250 \
+    --negative_prompt="painting, oil painting, illustration, drawing, art, sketch, oil painting, cartoon, CG Style, 3D render, unreal engine, blurring, dirty, messy, worst quality, low quality, frames, watermark, signature, jpeg artifacts,deformed, lowres, over-smooth" \
+    --tracker_project_name "NAOSD"
+

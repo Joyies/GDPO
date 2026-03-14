@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0, python GDPOSR/inferences/test.py \
+--input_path test_LR \
+--output_path experiment/GDPOSR \
+--pretrained_path ckp/GDPOSR \
+--pretrained_model_name_or_path stable-diffusion-2-1-base \
+--ram_ft_path ckp/DAPE.pth \
+--negprompt 'dotted, noise, blur, lowres, smooth' \
+--prompt 'clean, high-resolution, 8k' \
+--upscale 1 \
+--time_step=100 \
+--time_step_noise=250 

@@ -1,0 +1,36 @@
+
+accelerate launch --main_process_port=12345 --gpu_ids=0,1,2,3,4,5,6,7 --num_processes=8  GDPOSR/train/train_GDPOSR.py \
+    --pretrained_model_name_or_path="stable-diffusion-2-1-base" \
+    --basemodel_path="NAOSD" \
+    --dataset_folder="dataset" \
+    --testdataset_folder="RealSRCrop128" \
+    --resolution=512 \
+    --learning_rate=5e-5 \
+    --train_batch_size=1 \
+    --gradient_accumulation_steps=1 \
+    --enable_xformers_memory_efficient_attention \
+    --eval_freq 10 \
+    --checkpointing_steps 10 \
+    --mixed_precision='fp16' \
+    --report_to "tensorboard" \
+    --output_dir="experiment/GDPOSR" \
+    --null_text_ratio=1 \
+    --lora_rank_unet_vsd=4 \
+    --lora_rank_unet=4 \
+    --lora_rank_vae=4 \
+    --lambda_lpips=2 \
+    --lambda_l2=1 \
+    --lambda_vsd=1 \
+    --lambda_vsd_lora=1 \
+    --min_dm_step_ratio=0.02 \
+    --max_dm_step_ratio=0.50 \
+    --use_vae_encode_lora \
+    --align_method="adain" \
+    --use_online_deg \
+    --deg_file_path="params_GDPO.yml" \
+    --time_step=100 \
+    --time_step_noise=250 \
+    --groupsize=6 \
+    --negative_prompt="painting, oil painting, illustration, drawing, art, sketch, oil painting, cartoon, CG Style, 3D render, unreal engine, blurring, dirty, messy, worst quality, low quality, frames, watermark, signature, jpeg artifacts,deformed, lowres, over-smooth" \
+    --tracker_project_name "GDPOSR"
+
