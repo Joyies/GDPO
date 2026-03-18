@@ -16,7 +16,7 @@
 
 ---
 
-#### 🚩Accepted by CVPR2026
+🚩Accepted by CVPR2026
 ## ⏰ Update
 - **2026.3.19**: Paper is released on [ArXiv](https://arxiv.org/pdf/2603.16769).
 - **2026.3.12**: The training code and testing code are released.
