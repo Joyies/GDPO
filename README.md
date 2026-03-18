@@ -11,7 +11,7 @@
 <sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>OPPO Research Institute
 </div>
 
-[![](https://img.shields.io/badge/ArXiv%20-Paper-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2603.16769)&nbsp; [![weights](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-model%20weights-blue)](https://huggingface.co/Joypop/GDPO/tree/main)&nbsp;
+[![](https://img.shields.io/badge/ArXiv%20-Paper-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2603.16769)&nbsp; [![weights](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-model%20weights-blue)](https://huggingface.co/Joypop/GDPO/tree/main)&nbsp; [![weights](https://img.shields.io/badge/%F0%9F%A4%97%20CVPR%202026-blue)]&nbsp;
 
 
 ## ⏰ Update
