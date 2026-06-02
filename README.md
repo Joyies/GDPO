@@ -10,7 +10,7 @@
 
 <sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>OPPO Research Institute
 
-![Conference](https://img.shields.io/badge/CVPR%20-2026-blue?logo=cvf&logoColor=blue)&nbsp; [![](https://img.shields.io/badge/ArXiv%20-Paper-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2603.16769)&nbsp; [![weights](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-model%20weights-blue)](https://huggingface.co/Joypop/GDPO/tree/main)&nbsp; 
+[![Conference](https://img.shields.io/badge/CVPR%20-2026-blue?logo=cvf&logoColor=blue)](https://openaccess.thecvf.com/content/CVPR2026/papers/Yi_GDPO-SR_Group_Direct_Preference_Optimization_for_One-Step_Generative_Image_Super-Resolution_CVPR_2026_paper.pdf)&nbsp; [![](https://img.shields.io/badge/ArXiv%20-Paper-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/pdf/2603.16769)&nbsp; [![weights](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-model%20weights-blue)](https://huggingface.co/Joypop/GDPO/tree/main)&nbsp; 
 
 </div>
 
